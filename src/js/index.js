@@ -53,6 +53,41 @@ function myFunction (x, y) {
     return x;
 }
 
-console.log(myFunction(1, 23))
-console.log(myFunction(23, 23))
-console.log(myFunction(7, 3))
+// console.log(myFunction(1, 23))
+// console.log(myFunction(23, 23))
+// console.log(myFunction(7, 3))
+
+// Lesson 6
+
+const laptop = {
+    model: 'ThinkPad E15 Gen 2',
+    prozessor: 'Intel® Core™ i7',
+    betriebssystem: '4 GB SO-DIMM DDR4 3200MHz',
+    netzteil: '65W Netzteil PCC (3-polog) – EU (USB Typ C)',
+    bluetooth: 5,
+    openVideo() {
+        alert(`Open new lesson`)
+    },
+    search(){
+        alert(`Search info about ${this.model}`)
+    },
+    clearStory(){
+        alert(`Clear history`)
+    }
+}
+
+laptop.openVideo();
+laptop.search();
+laptop.clearStory();
+
+function NewMyLaptop(model, prozessor, betriebssystem, netzteil, bluetooth){
+    this.model = model;
+    this.prozessor = prozessor;
+    this.betriebssystem = betriebssystem;
+    this.netzteil = netzteil;
+    this.bluetooth = bluetooth;
+}
+
+const myLaptop = new NewMyLaptop('Apple MacBook Pro 13', 'Intel Core i5-8257U', '16 ГБ LPDDR4X 3733 МГц', '61W', 5 )
+
+console.log(myLaptop)
