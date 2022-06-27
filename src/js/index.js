@@ -53,6 +53,38 @@ function myFunction (x, y) {
     return x;
 }
 
-console.log(myFunction(1, 23))
-console.log(myFunction(23, 23))
-console.log(myFunction(7, 3))
+// console.log(myFunction(1, 23))
+// console.log(myFunction(23, 23))
+// console.log(myFunction(7, 3))
+
+// Lesson 6
+
+const laptop = {
+    model: 'ThinkPad E15 Gen 2',
+    prozessor: 'Intel® Core™ i7',
+    betriebssystem: '4 GB SO-DIMM DDR4 3200MHz',
+    netzteil: '65W Netzteil PCC (3-polog) – EU (USB Typ C)',
+    bluetooth: 5,
+    openVideo() {
+        alert(`Open new lesson`)
+    },
+    search(){
+        alert(`Search info about ${this.model}`)
+    },
+    clearStory(){
+        alert(`Clear history`)
+    }
+}
+
+//console.log(laptop.search())
+
+const newLaptop = Object.assign({}, laptop);
+console.log(newLaptop)
+
+function CreateObject(key, value){
+    this.key = key;
+    this.value = value;
+}
+
+let user = new CreateObject('admin', 'Peter');
+console.log(user)
