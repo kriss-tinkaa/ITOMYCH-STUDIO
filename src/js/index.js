@@ -76,15 +76,18 @@ const laptop = {
     }
 }
 
-//console.log(laptop.search())
+laptop.openVideo();
+laptop.search();
+laptop.clearStory();
 
-const newLaptop = Object.assign({}, laptop);
-console.log(newLaptop)
-
-function CreateObject(key, value){
-    this.key = key;
-    this.value = value;
+function NewMyLaptop(model, prozessor, betriebssystem, netzteil, bluetooth){
+    this.model = model;
+    this.prozessor = prozessor;
+    this.betriebssystem = betriebssystem;
+    this.netzteil = netzteil;
+    this.bluetooth = bluetooth;
 }
 
-let user = new CreateObject('admin', 'Peter');
-console.log(user)
+const myLaptop = new NewMyLaptop('Apple MacBook Pro 13', 'Intel Core i5-8257U', '16 ГБ LPDDR4X 3733 МГц', '61W', 5 )
+
+console.log(myLaptop)
