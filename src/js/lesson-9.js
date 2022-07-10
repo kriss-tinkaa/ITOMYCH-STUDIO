@@ -22,11 +22,11 @@ function isPrototype (a, b) {
     
     }
     
-console.log(isPrototype(obj1, obj2)) // false;
+//console.log(isPrototype(obj1, obj2)) // false;
     
-console.log(isPrototype(obj3, obj1)) // false;
+//console.log(isPrototype(obj3, obj1)) // false;
     
-console.log(isPrototype(obj1, obj3)) // true;
+//console.log(isPrototype(obj1, obj3)) // true;
 
 
 /*  LESSON */
@@ -101,23 +101,23 @@ class Samurai {};
 function Component() {}
 const API = function() {}
 
-console.log(Samurai.prototype)
-console.log(Component.prototype)
-console.log(API.prototype)
+//console.log(Samurai.prototype)
+//console.log(Component.prototype)
+//console.log(API.prototype)
 
-console.log(Object.prototype)
-console.log(Promise.prototype)
-console.log(Function.prototype)
-console.log(Boolean.prototype)
-console.log(Number.prototype)
-console.log(String.prototype)
-console.log(Array.prototype)
+//console.log(Object.prototype)
+//console.log(Promise.prototype)
+//console.log(Function.prototype)
+//console.log(Boolean.prototype)
+//console.log(Number.prototype)
+//console.log(String.prototype)
+//console.log(Array.prototype)
 
 
 let promise = new Promise(() => {}) // promise.__proto__ === Promise.prototype
 
 let man = {} // man.__proto__ === Object.prototype
-console.log(man.__proto__ === Object.prototype)
+//console.log(man.__proto__ === Object.prototype)
 
 let users = [] //users.__proto__ === Array.prototype
 
