@@ -149,10 +149,10 @@ class myLaptop extends Laptop{
 const myLaptop2 = new myLaptop('Apple MacBook Pro 13', 'Intel Core i5-8257U', '16 ГБ LPDDR4X 3733 МГц', '61W', 5, 2017, 'Apple shop')
 
 
-console.log(myLaptop2)
-console.log(myLaptop2.turnOn())
-console.log(myLaptop2)
-console.log(myLaptop2.turnOff())
-console.log(myLaptop2)
-console.log(myLaptop2.showInfo())
-console.log(myLaptop2.showAge())
+//console.log(myLaptop2)
+//console.log(myLaptop2.turnOn())
+//console.log(myLaptop2)
+//console.log(myLaptop2.turnOff())
+//console.log(myLaptop2)
+//console.log(myLaptop2.showInfo())
+//console.log(myLaptop2.showAge())
