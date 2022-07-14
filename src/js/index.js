@@ -4,6 +4,7 @@ import '../styles/main.scss';
 require('./lesson-8.js');
 require('./lesson-9.js');
 require('./lesson-10.js');
+require('./lesson-11.js');
 
 
 // Lesson 3
